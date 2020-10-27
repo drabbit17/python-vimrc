@@ -6,4 +6,4 @@ fi
 
 cp vimrc ~/.vimrc
 
-:PlugInstall
+vim -E -s -u "~/.vimrc" +PlugInstall +qall

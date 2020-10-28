@@ -7,12 +7,17 @@ Plug 'tmhedberg/SimpylFold'
 " Python specific indenting
 Plug 'vim-scripts/indentpython.vim'
 
+" Python autocomplete plugin
+Plug 'Valloric/YouCompleteMe'
+
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 call plug#end()
 
 set number
 set encoding=utf-8
+nnoremap <SPACE> <Nop>
+let mapleader=" "
 
 " split screen settings
 nnoremap <C-J> <C-W><C-J>
@@ -49,3 +54,8 @@ au BufNewFile,BufRead *.js, *.html, *.css
 
 " Flag unnecessary white spaces
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
+" YouCompleteMe settings
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+

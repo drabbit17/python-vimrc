@@ -76,15 +76,4 @@ au BufNewFile,BufRead *.js, *.html, *.css
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
-" Add python with virtualenv support for YouCompleteMe
-py3 << EOF
-import os
-import sys
-if 'VIRTUAL_ENV' in os.environ:
-  project_base_dir = os.environ['VIRTUAL_ENV']
-  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-  with open(activate_this, "rb") as source_file:
-      code = compile(source_file.read(), activate_this, "exec")
-  exec(code, dict(__file__=activate_this))
-EOF
 

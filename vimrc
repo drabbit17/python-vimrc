@@ -27,7 +27,12 @@ Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 call plug#end()
 
-set number
+" Some essential options
+set hlsearch " highlight all search results
+set ignorecase "ignore casing when searching
+set incsearch "show incremental search results
+set number "display line number
+" in case you want to have the 4 above as a one liner :set hls ic is nu
 set encoding=utf-8
 nnoremap <SPACE> <Nop>
 let mapleader=" "

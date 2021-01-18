@@ -41,7 +41,6 @@ syntax on
 " Ignore .pyc files
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
-
 " split screen settings
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>

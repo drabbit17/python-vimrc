@@ -25,7 +25,12 @@ Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+
+" Add JavaScript highlighting
+Plug 'pangloss/vim-javascript'
+
 call plug#end()
+
 
 " Some essential options
 set hlsearch " highlight all search results

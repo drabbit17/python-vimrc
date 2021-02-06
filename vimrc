@@ -30,6 +30,7 @@ call plug#end()
 " Some essential options
 set hlsearch " highlight all search results
 set ignorecase "ignore casing when searching
+set smartcase "if searching uppercase stick with it
 set incsearch "show incremental search results
 set number "display line number
 " in case you want to have the 4 above as a one liner :set hls ic is nu
